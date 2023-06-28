@@ -10,7 +10,7 @@
 body {
 	background: #f9f9f9;
 	min-height: 100vh;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 
 header {
@@ -21,10 +21,12 @@ header {
 	padding: 30px 100px;
 	display: flex;
 	justify-content: space-between;
+    z-index: 100;
 }
 .logo {
 	font-size: 2em;
 	color: #359381;
+    pointer-events: none;
 }
 
 .navigation a {
@@ -51,5 +53,13 @@ header {
 #text{
     position: absolute;
     font-size: 5em;
-    color:#333;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
 }
