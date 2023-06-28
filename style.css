@@ -20,13 +20,14 @@ header {
 	width: 100%;
 	padding: 30px 100px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
     z-index: 100;
 }
 .logo {
 	font-size: 2em;
 	color: #359381;
     pointer-events: none;
+    margin-right: 200px;
 }
 
 .navigation a {
